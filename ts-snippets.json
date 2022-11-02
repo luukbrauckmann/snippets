@@ -5,7 +5,9 @@
 		"description": "Standaard get functie",
 		"body": [
 			"get(): Promise<any> {",
-			"\treturn fetch('...url', { method: 'GET' })",
+			"\tconst resource = '...url/'",
+			"\tconst options = { method: 'GET' }",
+			"\treturn fetch(resource, options)",
 			"\t\t.then(responseString => responseString.json())",
 			"\t\t.then(response => response)",
 			"\t\t.catch(error => console.error(error))",
@@ -13,13 +15,15 @@
 			"}"
 		]
 	},
-	"post-function": {
+	"create-function": {
 		"scope": "ts",
-		"prefix": "function post",
-		"description": "Standaard post functie",
+		"prefix": "function create",
+		"description": "Standaard create functie",
 		"body": [
-			"post(): Promise<any> {",
-			"\treturn fetch('...url', { method: 'POST' })",
+			"post(data): Promise<any> {",
+			"\tconst resource = '...url/'",
+			"\tconst options = { method: 'POST', body: data }",
+			"\treturn fetch(resource, options)",
 			"\t\t.then(responseString => responseString.json())",
 			"\t\t.then(response => response)",
 			"\t\t.catch(error => console.error(error))",
@@ -30,10 +34,12 @@
 	"update-function": {
 		"scope": "ts",
 		"prefix": "function update",
-		"description": "Standaard put functie",
+		"description": "Standaard update functie",
 		"body": [
-			"update(): Promise<any> {",
-			"\treturn fetch('...url', { method: 'PUT' })",
+			"update(data): Promise<any> {",
+			"\tconst resource = '...url/'",
+			"\tconst options = { method: 'PUT', body: data }",
+			"\treturn fetch(resource, options)",
 			"\t\t.then(responseString => responseString.json())",
 			"\t\t.then(response => response)",
 			"\t\t.catch(error => console.error(error))",
@@ -46,8 +52,10 @@
 		"prefix": "function delete",
 		"description": "Standaard delete functie",
 		"body": [
-			"delete(): Promise<any> {",
-			"\treturn fetch('...url', { method: 'DELETE' })",
+			"delete(id): Promise<any> {",
+			"\tconst resource = `...url/${id}`",
+			"\tconst options = { method: 'DELETE' }",
+			"\treturn fetch(resource, options)",
 			"\t\t.then(responseString => responseString.json())",
 			"\t\t.then(response => response)",
 			"\t\t.catch(error => console.error(error))",

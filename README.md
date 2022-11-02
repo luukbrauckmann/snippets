@@ -6,3 +6,4 @@ Snippets for good & consistant coding structure.
 * HTML (Hyper Text Markup Language)
 * CSS (Cascading Style Sheet)
 * JS (JavaScript)
+* TS (TypeScript)
