@@ -1,0 +1,58 @@
+{
+	"get-function": {
+		"scope": "js",
+		"prefix": "get function",
+		"description": "Standaard get functie",
+		"body": [
+			"function get() {",
+			"\tfetch('...url', { method: 'GET' })",
+			"\t\t.then(responseString => responseString.json())",
+			"\t\t.then(response => response)",
+			"\t\t.catch(error => console.error(error))",
+			"\t\t.finally(() => console.info('Functie klaar.'))",
+			"}"
+		]
+	},
+	"post-function": {
+		"scope": "js",
+		"prefix": "post function",
+		"description": "Standaard post functie",
+		"body": [
+			"function post() {",
+			"\tfetch('...url', { method: 'POST' })",
+			"\t\t.then(responseString => responseString.json())",
+			"\t\t.then(response => response)",
+			"\t\t.catch(error => console.error(error))",
+			"\t\t.finally(() => console.info('Functie klaar.'))",
+			"}"
+		]
+	},
+	"update-function": {
+		"scope": "js",
+		"prefix": "update function",
+		"description": "Standaard put functie",
+		"body": [
+			"function update() {",
+			"\tfetch('...url', { method: 'PUT' })",
+			"\t\t.then(responseString => responseString.json())",
+			"\t\t.then(response => response)",
+			"\t\t.catch(error => console.error(error))",
+			"\t\t.finally(() => console.info('Functie klaar.'))",
+			"}"
+		]
+	},
+	"delete-function": {
+		"scope": "js",
+		"prefix": "delete function",
+		"description": "Standaard delete functie",
+		"body": [
+			"function delete() {",
+			"\tfetch('...url', { method: 'DELETE' })",
+			"\t\t.then(responseString => responseString.json())",
+			"\t\t.then(response => response)",
+			"\t\t.catch(error => console.error(error))",
+			"\t\t.finally(() => console.info('Functie klaar.'))",
+			"}"
+		]
+	}
+}

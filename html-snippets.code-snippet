@@ -1,0 +1,62 @@
+{
+	"body-layout": {
+		"scope": "html",
+		"prefix": "new body",
+		"description": "Standaard layout voor een body",
+		"body": [
+			"<body>",
+			"\t<header>...Header</header>",
+			"\t<main>...Main</main>",
+			"\t<footer>...Footer</footer>",
+			"</body>"
+		]
+	},
+	"article-layout": {
+		"scope": "html",
+		"prefix": "new article",
+		"description": "Standaard layout voor een article",
+		"body": [
+			"<article>",
+			"\t<h$1>...Heading level $1</h$1>",
+			"\t<p>...Paragraph</p>",
+			"\t<footer>...Footer</footer>",
+			"</article>"
+		]
+	},
+	"section-layout": {
+		"scope": "html",
+		"prefix": "new section",
+		"description": "Standaard layout voor een section",
+		"body": [
+			"<section>",
+			"\t<h$1>...Heading level $1</h$1>",
+			"\t<p>...Paragraph</p>",
+			"\t<footer>...Footer</footer>",
+			"</section>"
+		]
+	},
+	"table-layout": {
+		"scope": "html",
+		"prefix": "new table",
+		"description": "Standaard layout voor een section",
+		"body": [
+			"<table>",
+			"\t<thead>",
+			"\t\t<tr>",
+			"\t\t\t<th>...Header</th>",
+			"\t\t</tr>",
+			"\t</thead>",
+			"\t<tbody>",
+			"\t\t<tr>",
+			"\t\t\t<td>...Data</td>",
+			"\t\t</tr>",
+			"\t</tbody>",
+			"\t<tfoot>",
+			"\t\t<tr>",
+			"\t\t\t<td>...Footer</td>",
+			"\t\t</tr>",
+			"\t</tfoot>",
+			"</table>"
+		]
+	}
+}
