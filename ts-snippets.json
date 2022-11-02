@@ -1,11 +1,11 @@
 {
 	"get-function": {
-		"scope": "js",
+		"scope": "ts",
 		"prefix": "function get",
 		"description": "Standaard get functie",
 		"body": [
-			"function get() {",
-			"\tfetch('...url', { method: 'GET' })",
+			"get(): Promise<any> {",
+			"\treturn fetch('...url', { method: 'GET' })",
 			"\t\t.then(responseString => responseString.json())",
 			"\t\t.then(response => response)",
 			"\t\t.catch(error => console.error(error))",
@@ -14,12 +14,12 @@
 		]
 	},
 	"post-function": {
-		"scope": "js",
+		"scope": "ts",
 		"prefix": "function post",
 		"description": "Standaard post functie",
 		"body": [
-			"function post() {",
-			"\tfetch('...url', { method: 'POST' })",
+			"post(): Promise<any> {",
+			"\treturn fetch('...url', { method: 'POST' })",
 			"\t\t.then(responseString => responseString.json())",
 			"\t\t.then(response => response)",
 			"\t\t.catch(error => console.error(error))",
@@ -28,12 +28,12 @@
 		]
 	},
 	"update-function": {
-		"scope": "js",
+		"scope": "ts",
 		"prefix": "function update",
 		"description": "Standaard put functie",
 		"body": [
-			"function update() {",
-			"\tfetch('...url', { method: 'PUT' })",
+			"update(): Promise<any> {",
+			"\treturn fetch('...url', { method: 'PUT' })",
 			"\t\t.then(responseString => responseString.json())",
 			"\t\t.then(response => response)",
 			"\t\t.catch(error => console.error(error))",
@@ -42,12 +42,12 @@
 		]
 	},
 	"delete-function": {
-		"scope": "js",
+		"scope": "ts",
 		"prefix": "function delete",
 		"description": "Standaard delete functie",
 		"body": [
-			"function delete() {",
-			"\tfetch('...url', { method: 'DELETE' })",
+			"delete(): Promise<any> {",
+			"\treturn fetch('...url', { method: 'DELETE' })",
 			"\t\t.then(responseString => responseString.json())",
 			"\t\t.then(response => response)",
 			"\t\t.catch(error => console.error(error))",
