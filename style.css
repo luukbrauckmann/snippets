@@ -1,0 +1,103 @@
+/* Imports */
+
+/* Font faces */
+
+/* Custom properties */
+:root {
+	/* --font-size: clamp([value-min], [value-preferred], [value-max]); */
+	--font-size: clamp(2.25em, 2vw + 1.5em, 3.25em);
+	--font-family: Arial, sans-serif;
+	--spacing: 1em;
+	--border-radius: .25em;
+
+	--primary-color: #009dff;
+	--secondary-color: #64748B;
+	--accent-color: #ff6200;
+
+	--success-color: #22C55E;
+	--info-color: #3B82F6;
+	--warning-color: #F59E0B;
+	--danger-color: #EF4444;
+
+	--inline-padding: var();
+	--max-screen-size: 0;
+
+	--breakpoint-sm: 36em;
+	--breakpoint-md: 48em;
+	--breakpoint-lg: 62em;
+	--breakpoint-xl: 75em;
+}
+
+/* Defaults */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+img, picture, svg, video {
+	display: block;
+	max-width: 100%;
+}
+
+html,
+body {
+	height: 100%;
+	font-size: var(--font-size);
+	font-family: var(--font-family);
+}
+
+/* Body styling */
+body {
+	display: flex;
+	flex-flow: column;
+	gap: .5rem;
+}
+
+body > header,
+body > footer {
+	flex: 0 1 auto;
+}
+
+body > main {
+	flex: 1 1 auto;
+}
+
+body > header,
+body > main,
+body > footer {
+	padding-inline: calc(100vw - var(--active-breakpoint));
+}
+
+/*  Media queries */
+
+/* - Small */
+@media (min-width: 576px) {
+	:root {
+		--active-breakpoint: var(var(--breakpoint-sm))
+	}
+}
+
+/* - Medium */
+@media (min-width: 768px) {
+	:root {
+		--active-breakpoint: var(var(--breakpoint-md))
+	}
+}
+
+/* - Large */
+@media (min-width: 992px) {
+	:root {
+		--active-breakpoint: var(var(--breakpoint-lg))
+	}
+}
+
+/* - Extra Large */
+@media (min-width: 1200px) {
+	:root {
+		--active-breakpoint: var(var(--breakpoint-xl))
+	}
+}
